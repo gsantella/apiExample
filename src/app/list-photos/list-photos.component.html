@@ -1,0 +1,12 @@
+<p>list-photos works!</p>
+<p>Your photo preference is photo: {{ photoPreferenceId }} </p>
+
+<p>{{ photo.thumbnailUrl }}</p>
+<img [src]="photo.thumbnailUrl" />
+
+<ol>
+    <li *ngFor="let photo of photos">
+        {{ photo.title }}
+        <img [src]="photo.thumbnailUrl" />
+    </li>
+</ol>
